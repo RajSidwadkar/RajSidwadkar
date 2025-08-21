@@ -37,7 +37,7 @@ Visual Studio Google Colab Alteryx Designer Git Docker
 
 <br>
 
-🚀 Projects
+<h1>🚀 Projects</h1>
 Edu Vision
 
 Developed a full-stack MERN application for college analytics, deployed with Docker for scalability.
@@ -53,7 +53,8 @@ Optimized MongoDB for scalable data handling and fast record retrieval.
 
 <br>
 
-📈 GitHub Stats
+<h1>📈 GitHub Stats</h1>
+
 <div align="center">
 <a href="https://github.com/RajSidwadkar">
 <img src="https://github-readme-stats.vercel.app/api?username=RajSidwadkar&show_icons=true&theme=dark" alt="Raj's GitHub Stats">
@@ -65,7 +66,7 @@ Optimized MongoDB for scalable data handling and fast record retrieval.
 
 <br>
 
-🤝 Let's Connect
+<h3>🤝 Let's Connect</h3>
 <p align="center">
 <a href="https://www.linkedin.com/in/raj-sidwadkar">
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
