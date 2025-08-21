@@ -9,9 +9,9 @@
 <h1>💻 About Me:</h1>
 I'm a final-year Computer Science student passionate about building scalable and innovative full-stack applications.
 <br>
-My expertise lies in the **MERN stack**, complemented by a strong foundation in **Data Structures and Algorithms**.
+My expertise lies in the MERN stack, complemented by a strong foundation in Data Structures and Algorithms.
 <br>
-I have hands-on experience integrating **Machine Learning** solutions and optimizing backend workflows to solve real-world problems.
+I have hands-on experience integrating Machine Learning solutions and optimizing backend workflows to solve real-world problems.
 <br>
 
 Always eager to learn and drive innovation at scale.
