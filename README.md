@@ -7,7 +7,7 @@
 <br>
 
 <h1>💻 About Me:</h1>
-I'm a final-year Computer Science student passionate about building scalable and innovative full-stack applications.
+I'm a Computer Science graduate passionate about building scalable and innovative full-stack applications.
 <br>
 My expertise lies in the MERN stack, complemented by a strong foundation in Data Structures and Algorithms.
 <br>
