@@ -29,10 +29,10 @@ Frameworks & Libraries:
 React, Node.js, Express.js, Pandas, OpenCV, Bootstrap
 
 Databases:
-MongoDB, Microsoft SQL Server
+MongoDB, Neo4j, SQL, Redis
 
 Developer Tools:
-Visual Studio, Google Colab, Alteryx Designer, Git, Docker
+Visual Studio, Ec, Alteryx Designer, Git, Docker
 
 <br>
 
