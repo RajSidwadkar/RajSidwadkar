@@ -45,10 +45,10 @@ Developed a full-stack MERN application for college analytics, deployed with Doc
 Automated report generation with Python, reducing manual effort by 70%.
 <br>
 <br>
-<h3>Attendance System using Face Recognition :</h3>
 
-Built a MERN application with Python-based face recognition using OpenCV and dlib, achieving 95% accuracy.
-Optimized MongoDB for scalable data handling and fast record retrieval.
+<h3>Cineflux: :</h3>
+Developed a high-performance movie platform using Spring Boot and Microservices, featuring JWT authentication for secure user access.
+Optimized database interactions with Spring Data JPA, improving movie search and retrieval speeds by 40%.
 <br>
 
 <br>
