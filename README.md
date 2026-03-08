@@ -53,15 +53,14 @@ Optimized MongoDB for scalable data handling and fast record retrieval.
 
 <br>
 
-<h1>📈 GitHub Stats</h1>
+### 📈 GitHub Stats
 <div align="center">
-<a href="https://github.com/RajSidwadkar">
-<img src="https://github-readme-stats.vercel.app/api?username=RajSidwadkar&show_icons=true&theme=dark" alt="Raj's GitHub Stats">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RajSidwadkar&layout=compact&theme=dark" alt="Top Languages">
-</a>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=RajSidwadkar&show_icons=true&theme=dark" alt="Raj's GitHub Stats" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=RajSidwadkar&layout=compact&theme=dark" alt="Top Languages" />
 </div>
 
-<br>
+---
+
 
 <br>
 
