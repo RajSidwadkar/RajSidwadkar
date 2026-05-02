@@ -301,5 +301,5 @@ My world lives at the intersection of **distributed systems**, **microservices a
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer" width="100%"/>
 
 <div align="center">
-  <sub>⚡ Designed with precision · Built to scale · <b>Raj Kumar Sidwadkar</b> · Pune, India</sub>
+  <sub>⚡<b>Raj Kumar Sidwadkar</b>, India</sub>
 </div>
