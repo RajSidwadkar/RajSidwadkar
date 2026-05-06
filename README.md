@@ -257,9 +257,6 @@ My world lives at the intersection of **distributed systems**, **microservices a
 </picture>
 
 </div>
-
-> **⚙️ Activate the snake:** Add a GitHub Action using [platane/snk](https://github.com/platane/snk) — 2-minute setup.
-
 <br/>
 
 ---
