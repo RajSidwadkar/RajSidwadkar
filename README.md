@@ -213,15 +213,13 @@ My world lives at the intersection of **distributed systems**, **microservices a
 ## 📊 GitHub Analytics
 
 <br/>
-
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=RajSidwadkar&show_icons=true&theme=tokyonight&bg_color=0d1117&border_color=6E40C9&icon_color=6E40C9&title_color=6E40C9&text_color=c9d1d9&hide_border=false&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=86400"/>
+<img height="180em" src="https://github-readme-stats-8vygllxtp-rajsidwadkars-projects.vercel.app/api?username=RajSidwadkar&show_icons=true&theme=tokyonight&bg_color=0d1117&border_color=6E40C9&icon_color=6E40C9&title_color=6E40C9&text_color=c9d1d9&hide_border=false&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=86400"/>
 &nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RajSidwadkar&layout=compact&theme=tokyonight&bg_color=0d1117&border_color=6E40C9&title_color=6E40C9&text_color=c9d1d9&hide_border=false&langs_count=8&cache_seconds=86400"/>
+<img height="180em" src="https://github-readme-stats-8vygllxtp-rajsidwadkars-projects.vercel.app/api/top-langs/?username=RajSidwadkar&layout=compact&theme=tokyonight&bg_color=0d1117&border_color=6E40C9&title_color=6E40C9&text_color=c9d1d9&hide_border=false&langs_count=8&cache_seconds=86400"/>
 
 </div>
-
 <br/>
 
 <div align="center">
