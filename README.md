@@ -1,292 +1,174 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&customColorList=0,2,2,5,30&text=Raj%20Kumar%20Sidwadkar&fontSize=52&fontColor=ffffff&fontAlignY=55&desc=Software%20Engineer%20%7C%20AI%20Engineer&descSize=18&descAlignY=75&animation=twinkling" width="100%"/>
-
-<br/>
-
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6E40C9&center=true&vCenter=true&multiline=false&width=700&height=50&lines=Architecting+distributed+systems+at+scale+%F0%9F%9A%80;300%2B+LeetCode+problems+%E2%80%94+Top+1%25+globally+%F0%9F%8F%86;Building+production+microservices+%26+AGI+frameworks+%F0%9F%A7%A0;Turning+ambiguous+requirements+into+shipped+products+%E2%9A%A1)](https://git.io/typing-svg)
+<br>
+
+# Raj Kumar Sidwadkar
+
+<img src="https://img.shields.io/badge/Software_Engineer-000000?style=flat-square" alt="Software Engineer" />
+
+B.Tech CSE. Two backend focused internships. Currently building agent protocols and local first systems, and reading source code of the ones I admire.
+
+<br>
+
+<a href="https://github.com/RajSidwadkar"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://linkedin.com/in/raj-sidwadkar"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://leetcode.com/u/RajSIDS"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
+<a href="mailto:rajsidwadkar777@gmail.com"><img src="https://img.shields.io/badge/Email-000000?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+
+<br>
 
 </div>
 
-<br/>
+---
+
+### Current focus
+
+- Building local first systems that stay useful when a vendor's cloud does not
+- Designing wire protocols where security is enforced structurally, not by convention
+- Writing developer tools that solve one problem completely instead of many problems partially
+- Working through distributed systems and applied cryptography, one primitive at a time
+- Following the practical side of autonomous agent research, past the hype cycle
 
 ---
 
-<br/>
+### Projects
 
-<div align="center">
+Three repositories. Each one makes a specific engineering argument, which is why nothing else from the profile is featured here.
 
-<a href="https://linkedin.com/in/raj-sidwadkar">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-&nbsp;
-<a href="mailto:rajsidwadkar777@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-Drop%20a%20Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-&nbsp;
-<a href="https://leetcode.com/u/RajSIDS">
-  <img src="https://img.shields.io/badge/LeetCode-Top%201%25-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
-</a>
-&nbsp;
-<a href="https://github.com/RajSidwadkar">
-  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-</div>
-
-<br/>
-
----
-
-<br/>
-
-## 🧠 About Me
-
-<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300" alt="coding gif"/>
-
-I'm a **Software Engineer** and **AI Engineer** who designs and ships production-grade systems, not just code.
-
-My world lives at the intersection of **distributed systems**, **microservices architecture**, and **applied AI**  where milliseconds matter, uptime is non-negotiable, and scale is the default assumption.
-
-- 🔭 &nbsp; Currently building **Vadjanix** a sovereign neuro-symbolic AGI framework
-- ⚡ &nbsp; Reduced API latency by **30%** and achieved **99.5% uptime** across production services
-- 🧩 &nbsp; **Top 1% globally** on LeetCode with 300+ algorithmic problems solved
-- 🛠️ &nbsp; Specialise in turning messy requirements into clean, battle-tested systems
-- 🎓 &nbsp; B.Tech CSE Graduated 2025
-
-<br clear="right"/>
-
-<br/>
-
----
-
-<br/>
-
-## 🚀 Featured Projects
-
-<br/>
-
-<div align="center">
+<br>
 
 <table>
 <tr>
+<td width="100%">
 
-<td width="50%" valign="top">
+**UAP Protocol** &nbsp; <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" height="18"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" height="18"/> <img src="https://img.shields.io/badge/Ed25519-000000?style=flat-square" height="18"/>
 
-### 🤖 Vadjanix - Sovereign AGI Framework
+A security first wire protocol for AI tool access, built to close three specific holes left open by existing agent protocols: tool metadata that can be mutated after publication, tool execution with no sandbox boundary, and a server that acts as both resource server and authorization server for itself.
 
-> *A ground-up neuro-symbolic cognitive architecture. Not an LLM wrapper.*
+Each hole gets a structural fix rather than a configuration flag. Tool metadata is signed with Ed25519 inside the payload it describes, so any edit after signing breaks the signature before the gateway acts on it. Every tool call runs inside a fresh Docker container, read only root filesystem, capabilities dropped, memory capped, destroyed on response. Authorization is delegated entirely to an external identity provider with short lived, hard capped tokens, so the gateway is never both judge and party to the request.
 
-**What makes it different:**
-- 🧬 Four-tier cognitive memory with daily context consolidation
-- 🔌 Proactive event-driven nervous system with Human-on-the-loop governance
-- 🔐 Zero-Trust cryptographic agent identity — local-first sovereignty
-- 🌐 Federated learning with deterministic execution guarantees
+<details>
+<summary><b>Architecture and design decisions</b></summary>
+<br>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![GraphDB](https://img.shields.io/badge/GraphDB-FF6D00?style=flat-square&logo=neo4j&logoColor=white)
+The codebase is organized as hexagonal layers. The domain layer, `UapEnvelope`, `CapabilityCard`, `AuditEvent`, depends on nothing but the standard library. Application use cases depend only on domain ports. Infrastructure adapters, Keycloak, Docker, Ed25519, Pino, implement those ports and nothing else touches them directly. Swapping Docker for a WASM sandbox or Keycloak for Auth0 is an infrastructure change with zero domain impact.
 
-</td>
+Every request passes through an eight stage pipeline: frame parse, schema validation against AJV, token verification against a remote JWKS with a fifteen minute hard cap, scope enforcement, capability card signature check, sandboxed execution, non blocking audit emission, response envelope. Distributed tracing follows the W3C TraceContext standard end to end.
 
-<td width="50%" valign="top">
+[Repository](https://github.com/RajSidwadkar/UAP-protocol)
 
-### 🎬 CineFlux - High-Availability Ticket Platform
-
-> *Microservices-first architecture built for thousands of concurrent bookings.*
-
-**Engineering highlights:**
-- 📨 Apache Kafka for async, durable notification pipelines
-- ⚡ Redis caching for sub-ms read latency on hot data
-- 🛡️ Resilience4j circuit-breaking for fault-tolerant operations
-- 🐳 Spring Cloud + Docker for service mesh & container orchestration
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+</details>
 
 </td>
-
-</tr>
-<tr>
-
-<td width="50%" valign="top">
-
-### 🔍 VerityScan AI - NLP Detection Engine
-
-> *98% accuracy misinformation classifier built with a lean, surgical pipeline.*
-
-**Technical decisions:**
-- 📊 Multinomial Naive Bayes + Logistic Regression ensemble
-- 🔤 Porter Stemming + N-gram feature extraction
-- 🎯 Hyperparameter-tuned decision boundaries
-- 🚀 TF-IDF vectorisation for precision feature weighting
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![NLTK](https://img.shields.io/badge/NLTK-154360?style=flat-square&logo=python&logoColor=white)
-
-</td>
-
-<td width="50%" valign="top">
-
-### 📊 Impact at a Glance
-
-<br/>
-
-| Metric | Result |
-|---|---|
-| 🏆 LeetCode Ranking | **Top 1% Globally** |
-| ⚡ Latency Reduction | **30% faster** |
-| 📡 API Uptime | **99.5%** |
-| 🎯 NLP Accuracy | **98%** |
-| 🗄️ DB Query Speed | **25% faster** |
-| 📝 Problems Solved | **300+** |
-
-</td>
-
 </tr>
 </table>
 
-</div>
+<br>
 
-<br/>
+<table>
+<tr>
+<td width="100%">
 
----
+**Vadjanix** &nbsp; <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" height="18"/> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" height="18"/> <img src="https://img.shields.io/badge/Nostr-8E44AD?style=flat-square" height="18"/>
 
-<br/>
+A local first, multi agent orchestrator with no cloud dependency. Every incoming message is parsed into one typed structure, an `IntentPacket`, and routed by a fifty line prefix switcher to a typed handler: another agent, a database, a local file, a REST endpoint. No LLM sits in the routing path.
 
-## 🛠️ Tech Arsenal
+Before any model call happens, a deterministic pre-check gate evaluates the request against plain Markdown rule files, so hard constraints are enforced in code rather than left to model judgment. Agent identity and inter agent communication run over Nostr, giving each agent a cryptographic identity with no central server in the loop.
 
-<br/>
+<details>
+<summary><b>Architecture and design decisions</b></summary>
+<br>
 
-<div align="center">
+The system has no database. Memory is a set of append only Markdown files, profile, negotiation history, deal outcomes, a full reasoning audit trail, which keeps every decision the agent has made auditable in plain text by a human, not just by another model. For complex tasks the engine fans out to parallel specialist sub agents and aggregates their output with one of three explicit strategies, first response wins, consensus, or merge, rather than picking a default and hoping.
 
-**Languages**
+[Repository](https://github.com/RajSidwadkar/Vadjanix)
 
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=java,python,javascript,c,cs,sql&theme=dark" />
-</a>
+</details>
 
-<br/><br/>
+</td>
+</tr>
+</table>
 
-**Backend & Architecture**
+<br>
 
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=spring,nodejs,express,kafka,redis&theme=dark" />
-</a>
+<table>
+<tr>
+<td width="100%">
 
-<br/><br/>
+**slopcheck** &nbsp; <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" height="18"/> <img src="https://img.shields.io/badge/PyPI-3775A9?style=flat-square&logo=pypi&logoColor=white" height="18"/> <img src="https://img.shields.io/badge/stdlib_only-000000?style=flat-square" height="18"/>
 
-**Frontend**
+An offline, zero dependency detector for AI generated prose. It scores text with five independent heuristics instead of a model: a weighted phrase bank, sentence length variance, punctuation frequency, paragraph uniformity, and lexical diversity by type token ratio.
 
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=react,angular,html,css&theme=dark" />
-</a>
+Runs entirely on CPU, no network call, no external dependency, which makes it usable as a pre-commit hook or a CI gate without adding latency or a point of failure it doesn't control.
 
-<br/><br/>
+<details>
+<summary><b>Under the hood</b></summary>
+<br>
 
-**Data & DevOps**
+```
+slopcheck/
+├── cli.py            argument parsing and runner
+├── scorer.py          orchestrates all five signals
+├── render.py            console and JSON formatting
+└── signals/
+    ├── phrases.py          AI cliche matcher
+    ├── rhythm.py             sentence length variance
+    ├── punctuation.py          em dash and colon frequency
+    ├── structure.py             paragraph uniformity
+    └── lexical.py                type token ratio scorer
+```
 
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=mongodb,postgresql,mysql,docker,kubernetes,aws&theme=dark" />
-</a>
+Published to PyPI as `slopcheck-cli`, MIT licensed, with tagged releases.
 
-<br/><br/>
+[Repository](https://github.com/RajSidwadkar/slopcheck) &nbsp;·&nbsp; [Package](https://pypi.org/project/slopcheck-cli/)
 
-**Tools**
+</details>
 
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,linux&theme=dark" />
-</a>
-
-</div>
-
-<br/>
-
----
-
-<br/>
-
-## 📊 GitHub Analytics
-
-<br/>
-
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=RajSidwadkar&theme=tokyonight&background=0d1117&border=6E40C9&ring=6E40C9&fire=FF6B6B&currStreakLabel=6E40C9&sideLabels=6E40C9&dates=c9d1d9)](https://git.io/streak-stats)
-
-</div>
-
-<br/>
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=RajSidwadkar&theme=tokyonight&column=7&no-bg=true&no-frame=false&margin-w=4)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
-<br/>
+</td>
+</tr>
+</table>
 
 ---
 
-<br/>
+### Open source
 
-## 🐍 Contribution Graph
-
-<br/>
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RajSidwadkar/RajSidwadkar/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RajSidwadkar/RajSidwadkar/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/RajSidwadkar/RajSidwadkar/output/github-contribution-grid-snake.svg">
-</picture>
-
-</div>
-<br/>
+Contributor at Picnic Technologies, working through pull requests reviewed and merged by their engineering team. The value of that process was less about the code itself and more about watching how a team with real production constraints pushes back on a change before accepting it.
 
 ---
 
-<br/>
-
-## 📬 Let's Connect
-
-<br/>
+### Engineering interests
 
 <div align="center">
 
-*I'm always open to discussing system design, distributed architecture, or AI/ML research.*
-
-<br/>
-
-<a href="https://linkedin.com/in/raj-sidwadkar">
-  <img src="https://img.shields.io/badge/LinkedIn-Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-&nbsp;&nbsp;
-<a href="mailto:rajsidwadkar777@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Say%20Hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-&nbsp;&nbsp;
-<a href="https://leetcode.com/u/RajSIDS">
-  <img src="https://img.shields.io/badge/LeetCode-My%20Solutions-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
-</a>
-
-<br/><br/>
-
-![Profile Views](https://komarev.com/ghpvc/?username=RajSidwadkar&color=6E40C9&style=for-the-badge&label=PROFILE+VIEWS)
+`Protocol design` `Distributed systems` `Applied cryptography` `Developer tooling` `Local first software` `Autonomous agents and AGI research`
 
 </div>
 
-<br/>
+---
+
+### Technologies
+
+<div align="center">
+<br>
+<img src="https://skillicons.dev/icons?i=ts,py,js,nodejs,fastify,docker,redis,git,github,githubactions&theme=dark" alt="Technology icons" />
+<br><br>
+</div>
+
+`TypeScript` `Python` `JavaScript` `Node.js` `Fastify` `Docker` `Redis` `Nostr` `OpenTelemetry` `Ed25519` `JWT` `OAuth 2.1` `mTLS` `Zod` `AJV` `Pino` `Git` `GitHub Actions`
+
+
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer" width="100%"/>
+### Reading
+
+*Designing Data-Intensive Applications*, Martin Kleppmann
+*Database Internals*, Alex Petrov
+
+---
 
 <div align="center">
-  <sub>⚡<b>Raj Kumar Sidwadkar</b>, India</sub>
+
+Raj Kumar Sidwadkar &nbsp;·&nbsp; India &nbsp;·&nbsp; <a href="mailto:rajsidwadkar777@gmail.com">rajsidwadkar777@gmail.com</a>
+
 </div>
